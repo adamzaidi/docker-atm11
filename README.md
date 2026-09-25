@@ -33,6 +33,7 @@ Multi-arch support (amd64 + arm64)
 * /data mounted to a persistent disk
 * Port 25565/tcp mapped
 * environment variable EULA set to "true"
+* Recommended: add `--stop-timeout=60` to **Extra Parameters** (Unraid advanced view). On stop, the container types `stop` into the server console and waits for the world to save; Docker's default 10 seconds can be too short for a big world.
 
 As the end user, you are responsible for accepting the EULA from Mojang to run their server, by default in the container it is set to false.
 
